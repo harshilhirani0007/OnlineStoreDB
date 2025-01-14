@@ -4,31 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Harshil Hirani</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- About Me Section -->
-    <header class="about-header">
-        <h1>About Me</h1>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#education-section">Education</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#achievements-section">Achievements</a></li>
+                <li><a href="mailto:harshil@example.com">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="about-container">
+    <!-- About Me Section -->
+    <section id="about-section" class="about-section">
         <div class="about-card">
-            <div class="image-container">
+            <div class="about-image">
                 <img src="HarshilHirani.jpg" alt="Harshil Hirani">
             </div>
-            <div class="about-details">
+            <div class="about-content">
                 <h2>Harshil Hirani</h2>
-                <p>Hi, I’m Harshil Hirani, a passionate Full-Stack Developer specializing in the MERN Stack and .NET Core. I love solving real-world problems with code and creating efficient, scalable solutions. I am committed to making a difference through innovative solutions and effective problem-solving techniques. Let's build the future together!</p>
+                <p>Hello! I’m Harshil Hirani, a passionate Web Developer from Rajkot, Gujarat. I specialize in building modern web applications using **MERN Stack** and **.NET Core**. My goal is to solve real-world problems with innovative and scalable software solutions.</p>
+                <p>I'm currently pursuing my **Master of Computer Application (MCA)** from **RK University** (2024-2026). Previously, I completed my **Bachelor of Computer Application (BCA)** from the same university (2021-2024).</p>
+                <p>Let's connect and build something amazing together!</p>
                 <a href="mailto:harshil@example.com" class="btn">Contact Me</a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education-section" class="education-section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Computer Application (MCA)</strong> - RK University, Rajkot (2024-2026)</li>
+            <li><strong>Bachelor of Computer Application (BCA)</strong> - RK University, Rajkot (2021-2024)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills-section" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">Web Development</div>
+            <div class="skill-card">MERN Stack (MongoDB, Express, React, Node)</div>
+            <div class="skill-card">.NET Core & C#</div>
+            <div class="skill-card">RESTful APIs</div>
+            <div class="skill-card">Database Management (SQL, NoSQL)</div>
+            <div class="skill-card">Responsive Web Design</div>
+            <div class="skill-card">IoT Integration</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects-section" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Grocery Store Web Application</h3>
+            <p>Developed a full-featured Grocery Store web application with the following features:</p>
+            <ul>
+                <li>Gmail Verification for User Sign-Up/Login</li>
+                <li>Sales and Revenue Tracking</li>
+                <li>Order Management System</li>
+                <li>Wishlist and Offers Feature</li>
+                <li>Admin Dashboard to Change Website Name, Manage Offers, and Track Performance</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Laptop Store Web Application</h3>
+            <p>Built a Laptop Store web application that allows users to:</p>
+            <ul>
+                <li>Browse and Purchase Laptops</li>
+                <li>Filter Products by Brand, Specifications, and Price</li>
+                <li>Manage Orders and Wishlist</li>
+                <li>Admin Dashboard for Inventory and Sales Management</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements-section" class="achievements-section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Participated in the Smart Minds Marathon Hackathon at RK University</li>
+            <li>Developed a real-time IoT-based Drug Inventory and Supply Chain Tracking System</li>
+            <li>Completed 3 months of rigorous interview preparation for Full-Stack Development</li>
+        </ul>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Harshil Hirani. All Rights Reserved.</p>
+        <p>&copy; 2025 Harshil Hirani. All Rights Reserved. | <a href="mailto:harshil@example.com">Email Me</a></p>
     </footer>
+
 </body>
 </html>
