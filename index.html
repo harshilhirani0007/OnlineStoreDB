@@ -1,1 +1,102 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Your<span>Name</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Hi, I'm <span>Your Name</span></h2>
+            <p>A passionate Full-Stack Developer creating modern and user-friendly web applications.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a software developer specializing in the MERN stack and .NET Core. I enjoy building efficient, scalable, and innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A real-time Drug Inventory and Supply Chain Tracking System with IoT integration.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A Hospital Bed Availability and Patient Admission Management System with predictive analytics.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>MERN Stack</li>
+                <li>.NET Core</li>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>IoT Integration</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>Made with ❤️ by Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
