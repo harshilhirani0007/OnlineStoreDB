@@ -1,118 +1,82 @@
-/* Global Styles */
-* {
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* Education Section */
+.education-section {
     background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #333;
 }
 
-/* Navigation Header Styles */
-.main-header {
-    background-color: #333;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.main-header nav ul {
-    list-style: none;
+.education-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-header nav ul li {
-    margin: 0 15px;
-}
-
-.main-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.main-header nav ul li a:hover {
-    color: #ff5722;
-}
-
-/* About Section */
-.about-section {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+.education-item {
     background-color: #fff;
-}
-
-.about-card {
-    display: flex;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    border: 1px solid #ddd;
+    margin: 10px;
     padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
 }
 
-.about-image img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 20px;
-    border: 5px solid #ff5722;
-}
-
-/* Projects Section */
-.projects-section {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.project {
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
+.education-item h3 {
     font-size: 1.5rem;
-    color: #ff5722;
     margin-bottom: 10px;
 }
 
-.project ul {
-    list-style: square inside;
+.education-item p {
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Achievements Section */
-.achievements-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+/* Skills Section */
+.skills-section {
+    padding: 40px;
     text-align: center;
+    background-color: #fff;
 }
 
-.achievements-section h2 {
+.skills-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.achievements-section ul {
-    list-style: disc;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+    background-color: #0056b3;
+    cursor: pointer;
 }
