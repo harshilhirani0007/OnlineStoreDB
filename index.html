@@ -3,98 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Harshil Hirani</title>
+    <title>About Me - Harshil Hirani</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Section -->
-    <header class="navbar">
-        <div class="container">
-            <h1 class="logo"><span>Harshil Hirani</span></h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="#about-section">About Me</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="mailto:harshil@example.com">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Hi, I'm <span>Harshil Hirani</span></h2>
-            <p>Dedicated Full-Stack developer. Capable to solve working problems. Passionate about learning & development to reach the target. Eager to tackle more complex problems and continue to find ways to maximize user efficiency. My next mission is how to become a Mern stack Developer. I would love to build some Giant Website which will shine myself.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a software developer specializing in the MERN stack and .NET Core. I enjoy building efficient, scalable, and innovative solutions.</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A real-time Drug Inventory and Supply Chain Tracking System with IoT integration.</p>
-                <a href="#" class="btn">View Project</a>
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="HarshilHirani.jpg" alt="Harshil Hirani">
             </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A Hospital Bed Availability and Patient Admission Management System with predictive analytics.</p>
-                <a href="#" class="btn">View Project</a>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hello! I’m Harshil Hirani, a passionate Full-Stack Developer with expertise in **MERN Stack** and **.NET Core**. I love crafting web applications that solve real-world problems. With a deep understanding of both front-end and back-end technologies, I aim to deliver robust and scalable solutions for businesses and individuals.</p>
+                <p>I am also skilled in developing **IoT-based inventory systems** and **hospital queuing models** to streamline operations and improve efficiency. My experience includes building applications with **real-time tracking**, **predictive analytics**, and **database management**.</p>
+                <a href="mailto:harshil@example.com" class="btn">Contact Me</a>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>MERN Stack</li>
-                <li>.NET Core</li>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>Node.js</li>
-            </ul>
+    <section id="skills-section" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">MERN Stack (MongoDB, Express, React, Node)</div>
+            <div class="skill-card">.NET Core & C#</div>
+            <div class="skill-card">RESTful APIs</div>
+            <div class="skill-card">IoT Integration</div>
+            <div class="skill-card">Database Management (SQL, NoSQL)</div>
+            <div class="skill-card">Responsive Web Design</div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/yourformid" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects-section" class="projects-section">
+        <h2>Recent Projects</h2>
+        <ul>
+            <li><strong>Drug Inventory and Supply Chain Tracking System:</strong> An IoT-based platform to monitor real-time shipment and track inventory levels.</li>
+            <li><strong>Hospital Bed Availability & Patient Queuing App:</strong> A city-wide healthcare system to manage hospital resources and patient admissions efficiently.</li>
+            <li><strong>Portfolio Website:</strong> This personal portfolio showcasing my skills and projects.</li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-        <p>Made with ❤️ by Harshil Hirani</p>
+        <p>&copy; 2025 Harshil Hirani. All Rights Reserved. | <a href="mailto:harshil@example.com">Email Me</a></p>
     </footer>
 
     <script src="script.js"></script>
