@@ -1,59 +1,36 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-nav ul {
+/* About Section Styling */
+.about-section {
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: bold;
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    background-color: #444;
-    border-radius: 5px;
-}
-
-/* About Me Section */
-.about-section {
+    align-items: center;
+    padding: 60px 0;
     background-color: #fff;
-    padding: 50px;
-    text-align: center;
 }
 
 .about-card {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
 .about-image img {
@@ -61,10 +38,7 @@ nav ul li a:hover {
     width: 150px;
     height: 150px;
     object-fit: cover;
-}
-
-.about-content {
-    max-width: 600px;
+    margin-right: 30px;
 }
 
 .about-content h2 {
@@ -78,45 +52,41 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.btn {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Education Section */
+/* Education Section Styling */
 .education-section {
-    padding: 50px;
+    padding: 60px 20px;
     background-color: #fff;
-    text-align: center;
+}
+
+.education-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .education-item {
-    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .education-item h3 {
     font-size: 1.8rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .education-item p {
-    font-size: 1rem;
-    color: #777;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-/* Skills Section */
+/* Skills Section Styling */
 .skills-section {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
 }
 
 .skills-container {
@@ -127,10 +97,144 @@ nav ul li a:hover {
 }
 
 .skill-card {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    width: 180px;
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-   
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project ul li {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Achievements Section Styling */
+.achievements-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.achievements-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.achievements-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.achievements-section ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .education-section {
+        padding: 40px 20px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
