@@ -3,66 +3,136 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-/* Education Section */
-.education-section {
-    background-color: #f4f4f4;
-    padding: 40px;
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.nav-container nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-container nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* About Me Section */
+.about-section {
+    background-color: #fff;
+    padding: 50px;
     text-align: center;
 }
 
-.education-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.education-list {
+.about-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
 }
 
-.education-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 8px;
+.about-container img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.education-item h3 {
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.education-item p {
+.project-card p {
     font-size: 1rem;
     color: #555;
 }
 
 /* Skills Section */
 .skills-section {
-    padding: 40px;
+    padding: 50px;
     text-align: center;
     background-color: #fff;
 }
 
-.skills-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .skill-card {
@@ -73,10 +143,30 @@ body {
     width: 180px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
 .skill-card:hover {
     background-color: #0056b3;
     cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
