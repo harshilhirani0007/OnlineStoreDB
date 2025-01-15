@@ -227,3 +227,45 @@ section h2 {
         border-radius: 10px 10px 0 0;
     }
 }
+
+/* Styling for the About Section Image */
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* For larger screens, increase the image size */
+@media (min-width: 1024px) {
+    .about-image img {
+        max-width: 450px;
+    }
+}
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.about-content {
+    padding: 30px;
+    flex: 1;
+}
