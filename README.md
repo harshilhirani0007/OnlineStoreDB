@@ -8,4 +8,4 @@ This is the personal portfolio of Harshil Hirani, a passionate Web Developer.
 - Skills Section
 - Contact Form
 
-Visit my website at [https://your-username.github.io/portfolio-website](https://harshilhirani0007.github.io/portfolio-website).
+Visit my website at [https://harshilhirani0007.github.io](https://harshilhirani0007.github.io).
