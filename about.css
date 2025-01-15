@@ -295,3 +295,233 @@ body {
         margin: 10px 0;
     }
 }
+/* Reset some default browser styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Navigation Styling */
+.main-header {
+    background-color: #333;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header nav ul li {
+    margin: 0 20px;
+}
+
+.main-header nav ul li a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.main-header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.about-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px 0 0 10px;
+}
+
+.about-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.about-content .btn {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.about-content .btn:hover {
+    background-color: #007c91;
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+}
+
+.education-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.achievements-section ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #007c91;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-card {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
