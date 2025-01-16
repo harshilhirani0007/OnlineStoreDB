@@ -55,3 +55,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// JavaScript for Responsive Navigation Menu
+const menuToggle = document.getElementById('menu-toggle');
+const navLink = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
